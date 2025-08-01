@@ -1,0 +1,48 @@
+$Checkbox-border: #838383;
+.todo-wrap {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+  width: calc(100% - 2px);
+  height: 50px;
+  border-right: 1px solid $Checkbox-border;
+  border-bottom: 1px solid $Checkbox-border;
+  border-left: 1px solid $Checkbox-border;
+  &:hover {
+    background-color: #e4e4e4;
+  }
+  .checkbox-wrap {
+    display: block;
+    margin-left: 20px;
+    border-radius: 50%;
+  }
+  .todo-content {
+    display: inline-block;
+    flex: 1;
+    margin-left: 10px;
+    font-size: 18px;
+  }
+  .del-btn {
+    display: none;
+    cursor: pointer;
+    width: 80px;
+    height: 30px;
+    margin-right: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #cf2a2a;
+    border: none;
+    border-radius: 5px;
+    &:hover {
+      scale: 1.05;
+      background-color: #e93c3c;
+    }
+  }
+  &:hover {
+    .del-btn {
+      display: block;
+    }
+  }
+}

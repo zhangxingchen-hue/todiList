@@ -1,0 +1,20 @@
+$Checkbox-border: #838383;
+
+.footer-wrap {
+  display: flex;
+  height: 30px;
+  padding: 5px;
+  align-items: center;
+  border-right: 1px solid $Checkbox-border;
+  border-bottom: 1px solid $Checkbox-border;
+  border-left: 1px solid $Checkbox-border;
+  .check-all-btn {
+    margin-left: 50px;
+  }
+  .clearn-completed {
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 20px;
+    color: #3539eb;
+  }
+}
